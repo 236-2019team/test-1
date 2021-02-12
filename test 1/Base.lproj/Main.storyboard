@@ -878,10 +878,10 @@
             </objects>
             <point key="canvasLocation" x="76.811594202898561" y="1366.7410714285713"/>
         </scene>
-        <!--View Controller-->
+        <!--Json Trail View Controller-->
         <scene sceneID="qO8-lP-YAu">
             <objects>
-                <viewController id="68n-ZD-34I" sceneMemberID="viewController">
+                <viewController id="68n-ZD-34I" customClass="JsonTrailViewController" customModule="test_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Kc-Sn-dmt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -962,10 +962,10 @@
             </objects>
             <point key="canvasLocation" x="-578" y="8401"/>
         </scene>
-        <!--View Controller-->
+        <!--Array Trail View Controller-->
         <scene sceneID="ryw-0r-QJ7">
             <objects>
-                <viewController id="qrf-cV-rhR" sceneMemberID="viewController">
+                <viewController id="qrf-cV-rhR" customClass="ArrayTrailViewController" customModule="test_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Of3-Ls-Ci7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
