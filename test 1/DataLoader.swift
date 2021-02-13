@@ -11,11 +11,12 @@ public class DataLoader{
     @published var TrailData=[TrailData]()
     
     func load() {
-        if let fileLocation = Bundle.main.url(forResource: "myTrail", "withExtension: "JSON"){
+        if let fileLocation = Bundle.main.url(forResource: "myTrail", withExtension: "JSON"){
         
         // do catch in case of error
             do {
-             let data = try Data(contentsOf)
+               // last edit
+                let data = try Data(contentsOf)
             }
             catch {
             print(error)
