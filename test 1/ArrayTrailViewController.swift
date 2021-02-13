@@ -14,15 +14,15 @@ class ArrayTrailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Split string into array
-        let stringToSplit = "BoggyHole description hard 200"
-        let splitString = stringToSplit.components(separatedBy: " ")
-        
-        let splitToCharacters = Array(stringToSplit)
-        
-        for i in splitToCharacters {
-            print("Listing: ", i," of ",splitToCharacters.count ," is " ,splitToCharacters[i])
-        }
+//        // Split string into array
+//        let stringToSplit = "BoggyHole description hard 200"
+//        let splitString = stringToSplit.components(separatedBy: " ")
+//
+//        let splitToCharacters = Array(stringToSplit)
+//
+//        for mystring in splitToCharacters {
+//            print("Listing: ", mystring," of ",splitToCharacters.count ," is " ,splitToCharacters[mystring])
+//        }
        
         
     }

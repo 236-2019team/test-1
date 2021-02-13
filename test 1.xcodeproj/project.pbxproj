@@ -19,6 +19,8 @@
 		C3460C5625D6A0FF00576186 /* ArrayTrailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3460C5525D6A0FF00576186 /* ArrayTrailViewController.swift */; };
 		C3460C5B25D6A13100576186 /* DatabaseTrailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3460C5A25D6A13100576186 /* DatabaseTrailViewController.swift */; };
 		C3460C6625D6A50E00576186 /* TrailData.json in Resources */ = {isa = PBXBuildFile; fileRef = C3460C6525D6A50E00576186 /* TrailData.json */; };
+		C3460C8F25D8113500576186 /* TrailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3460C8E25D8113500576186 /* TrailData.swift */; };
+		C3460C9425D8122400576186 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3460C9325D8122400576186 /* DataLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		C3460C5525D6A0FF00576186 /* ArrayTrailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTrailViewController.swift; sourceTree = "<group>"; };
 		C3460C5A25D6A13100576186 /* DatabaseTrailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseTrailViewController.swift; sourceTree = "<group>"; };
 		C3460C6525D6A50E00576186 /* TrailData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TrailData.json; sourceTree = "<group>"; };
+		C3460C8E25D8113500576186 /* TrailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailData.swift; sourceTree = "<group>"; };
+		C3460C9325D8122400576186 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 				C3460C5525D6A0FF00576186 /* ArrayTrailViewController.swift */,
 				C3460C5A25D6A13100576186 /* DatabaseTrailViewController.swift */,
 				C3460C6525D6A50E00576186 /* TrailData.json */,
+				C3460C8E25D8113500576186 /* TrailData.swift */,
+				C3460C9325D8122400576186 /* DataLoader.swift */,
 			);
 			path = "test 1";
 			sourceTree = "<group>";
@@ -272,8 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3460C5B25D6A13100576186 /* DatabaseTrailViewController.swift in Sources */,
+				C3460C8F25D8113500576186 /* TrailData.swift in Sources */,
 				C285857D25C38C8D002A720C /* ViewController.swift in Sources */,
 				C3460C5625D6A0FF00576186 /* ArrayTrailViewController.swift in Sources */,
+				C3460C9425D8122400576186 /* DataLoader.swift in Sources */,
 				C285857925C38C8D002A720C /* AppDelegate.swift in Sources */,
 				C285857B25C38C8D002A720C /* SceneDelegate.swift in Sources */,
 				C3460C5125D6A0AA00576186 /* JsonTrailVewController.swift in Sources */,
