@@ -9,6 +9,7 @@ import UIKit
 
 class JsonTrailViewController: UIViewController {
 
+    //definition of Json data definition
     struct DemoData: Codable {
         let trailName: String
         let description: String

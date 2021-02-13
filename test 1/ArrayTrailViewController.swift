@@ -1,5 +1,5 @@
 //
-//  ArrayTableViewController.swift
+//  ArrayTrailViewController.swift
 //  test 1
 //
 //  Created by Administrator on 2/12/21.
@@ -20,11 +20,10 @@ class ArrayTrailViewController: UIViewController {
         
         let splitToCharacters = Array(stringToSplit)
         
-        for i in splitToCharacters {
-            print("Listing: ", i," of ",splitToCharacters.count ," is " ,splitToCharacters[i])
+        for mystring in splitToCharacters {
+            print("Listing: ", myString," of ",splitToCharacters.count ," is " ,splitToCharacters[mystring])
         }
        
-        
-    }
+    } //  end_ViewDidLoad
 
-}
+}  //end_class
