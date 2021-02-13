@@ -1,13 +1,13 @@
 
 [
     {
-    "trailName": "Boggie Hole Trail",
+    "trailName": "Boggy Hole",
     "description": "This is a great trail with no holes",
     "lengthMeters": "200.5",
     "difficulty":"Moderate"
     },
     {
-    "trailName": "Bogge Hole Trail",
+    "trailName": "Lohmann Buck Twining",
     "description": "This is text from the local JSON file",
     "lengthMeters": "500.5",
     "difficulty":"Easy" }
