@@ -1,7 +1,14 @@
 
-{
-    "trailName": "Bogge Hole Trail",
-    "description": "This is text from the local JSON file"
-    "lengthMeters": "200.5"
+[
+    {
+    "trailName": "Boggie Hole Trail",
+    "description": "This is a great trail with no holes",
+    "lengthMeters": "200.5",
     "difficulty":"Moderate"
-}
+    },
+    {
+    "trailName": "Bogge Hole Trail",
+    "description": "This is text from the local JSON file",
+    "lengthMeters": "500.5",
+    "difficulty":"Easy" }
+]
