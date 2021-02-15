@@ -16,6 +16,10 @@ class JsonTrailViewController: UIViewController {
         let difficulty: String
         }
     
+    @IBOutlet weak var trailTitle: UILabel!
+    @IBOutlet weak var trailDifficulty: UILabel!
+    @IBOutlet weak var trailDescription: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let localData = self.readLocalFile(forName: "TrailData") {
