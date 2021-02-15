@@ -957,15 +957,20 @@
                         <viewLayoutGuide key="safeArea" id="SAk-hw-Ng6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="trailDescription" destination="eha-UO-ZmI" id="Kbf-zJ-gef"/>
+                        <outlet property="trailDifficulty" destination="iZd-5P-bCa" id="iBh-he-IgB"/>
+                        <outlet property="trailTitle" destination="A8n-MQ-1KZ" id="wZx-kD-Z9W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hy6-ed-PkQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-578" y="8401"/>
         </scene>
-        <!--Array Trail View Controller-->
+        <!--Json Trail View Controller-->
         <scene sceneID="ryw-0r-QJ7">
             <objects>
-                <viewController id="qrf-cV-rhR" customClass="ArrayTrailViewController" customModule="test_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qrf-cV-rhR" customClass="JsonTrailViewController" customModule="test_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Of3-Ls-Ci7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1041,6 +1046,9 @@
                         <viewLayoutGuide key="safeArea" id="PBQ-Ac-Pcq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="TrailTitleLabel" destination="TLA-Ye-61Q" id="q5o-L5-cwf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEo-T1-XEt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2380,16 +2388,16 @@
                                     <constraint firstAttribute="height" constant="584" id="6pl-cc-qhs"/>
                                 </constraints>
                             </mapView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="qqJ-gY-Iyu">
-                                <rect key="frame" x="17" y="834" width="381" height="28"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="qqJ-gY-Iyu">
+                                <rect key="frame" x="17" y="834" width="380" height="28"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                             </pageControl>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4xp-0a-rWq">
                                 <rect key="frame" x="184" y="694" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="START" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBE-Nb-gc9">
-                                <rect key="frame" x="160" y="653" width="94" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="START" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBE-Nb-gc9">
+                                <rect key="frame" x="163" y="653" width="88.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
