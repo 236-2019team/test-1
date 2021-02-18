@@ -1,14 +1,46 @@
 
 [
     {
-    "trailName": "Boggy Hole",
+    "id":"1",
+    "trailName": "Belton Copp",
     "description": "This is a great trail with no holes",
     "lengthMeters": "200.5",
     "difficulty":"Moderate"
     },
     {
+    "id":"2",
     "trailName": "Lohmann Buck Twining",
     "description": "This is text from the local JSON file",
     "lengthMeters": "500.5",
+    "difficulty":"Easy" },
+    {
+    "id":"3",
+    "trailName": "DeGarenday",
+    "description": "This is text from the local JSON file",
+    "lengthMeters": "500.5",
+    "difficulty":"Easy" },
+    {
+    "id":"4",
+    "trailName": "Hatchett's HIll",
+    "description": "Tdescription",
+    "lengthMeters": "500.5",
+    "difficulty":"Easy" },
+    {
+    "id":"5",
+    "trailName": "Griswald",
+    "description": "Tdescription",
+    "lengthMeters": "500.5",
+    "difficulty":"Easy" },
+    {
+    "id":"6",
+    "trailName": "Jerico",
+    "description": "Tdescription",
+    "lengthMeters": "500.5",
+    "difficulty":"Easy" },
+    {
+    "id":"7",
+    "trailName": "Heller",
+    "description": "Tdescription",
+    "lengthMeters": "500.5",
     "difficulty":"Easy" }
-]
+    ]
