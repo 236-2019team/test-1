@@ -1,0 +1,53 @@
+
+
+[    {
+    "traiId":1,
+    "trailName": "Belton Copp",
+    "description": "This is a great trail with no holes",
+    "lengthMeters": 200.5,
+    "difficulty":"Moderate",
+    "lon":38.5,
+    "lat":41.0
+    },
+    {
+    "traiId":2,
+    "trailName": "Lohmann Buck Twining",
+    "description": "This is text from the local JSON file",
+    "lengthMeters": 500.5,
+    "difficulty":"Easy",
+    "lon":38.5,
+    "lat":41.0
+    },
+    "traiId":4,
+    "trailName": "Hatchett's HIll",
+    "description": "Tdescription",
+    "lengthMeters": 500.5,
+    "difficulty":"Easy",
+    "lon":38.5,
+    "lat":41.1
+    },
+    "traiId":5,
+    "trailName": "Griswald",
+    "description": "Tdescription",
+    "lengthMeters": 500.5,
+    "difficulty":"Easy",
+    "lon":38.5,
+    "lat":41.2
+    },
+    "traiId":6,
+    "trailName": "Jerico",
+    "description": "Tdescription",
+    "lengthMeters": 500.5,
+    "difficulty":"Easy",
+    "lon":38.5,
+    "lat":41.3
+    },
+    "traiId":7,
+    "trailName": "Heller",
+    "description": "Tdescription",
+    "lengthMeters": "500.5",
+    "difficulty":"Easy",
+    "lon":38.5,
+    "lat":41.0
+    }
+   ]

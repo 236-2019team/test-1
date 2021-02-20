@@ -7,11 +7,17 @@
 
 import Foundation
 
-struct TrailData:Codable {
-    var trailName:String
-    var description:String
-    var lengthMeters:Double
-    var difficulty:String
+struct JsnTrailData:Codable {
+    var trailId:Int!
+    var trailName:String!
+    var description:String!
+    var lengthMeters:Double!
+    var difficulty:String!
+    var lon:Double!
+    var lat:Double!
 }
+
+
+
     
 

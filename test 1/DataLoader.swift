@@ -8,7 +8,7 @@
 import Foundation
 
 public class DataLoader{
-    @published var TrailData=[TrailData]()
+    @published var myTrailData = [TrailData]
     
     func load() {
         if let fileLocation = Bundle.main.url(forResource: "myTrail", withExtension: "JSON"){
@@ -16,7 +16,7 @@ public class DataLoader{
         // do catch in case of error
             do {
                // last edit
-                let data = try Data(contentsOf)
+                _ = try Data(contentsOf: fileLocation)
             }
             catch {
             print(error)

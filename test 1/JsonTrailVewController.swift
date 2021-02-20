@@ -10,6 +10,7 @@ import UIKit
 class JsonTrailViewController: UIViewController {
 
     struct DemoData: Codable {
+        let trailId:Int
         let trailName: String
         let description: String
         let lengthMeters: Double
@@ -28,6 +29,7 @@ class JsonTrailViewController: UIViewController {
         
         let urlString = "https://raw.githubusercontent.com/programmingwithswift/ReadJSONFileURL/master/hostedDataFile.json"
 
+                
         self.loadJson(fromURLString: urlString) { (result) in
             switch result {
             case .success(let data):
@@ -59,6 +61,7 @@ class JsonTrailViewController: UIViewController {
         do {
             let decodedData = try JSONDecoder().decode(DemoData.self,from: jsonData)
             
+            print("trailId: ",decodedData.trailId)
             print("title: ", decodedData.trailName)
             print("description: ", decodedData.description)
             print("length: ",decodedData.lengthMeters)
@@ -68,6 +71,7 @@ class JsonTrailViewController: UIViewController {
             print("decode error")
         }
     }  //  end_parse
+    
     
     private func loadJson(fromURLString urlString: String,
                           completion: @escaping (Result<Data, Error>) -> Void) {
