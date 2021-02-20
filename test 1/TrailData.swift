@@ -8,7 +8,7 @@
 import Foundation
 
 struct TrailData:Codable {
-    var id:int
+    var id:Int
     var trailName:String
     var description:String
     var lengthMeters:Double
