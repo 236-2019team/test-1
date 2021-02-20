@@ -25,9 +25,10 @@ class JsonTrailViewController: UIViewController {
         if let localData = self.readLocalFile(forName: "TrailData") {
             self.parse(jsonData: localData)
         }
-        
+        // this is not surrently being used
         let urlString = "https://raw.githubusercontent.com/programmingwithswift/ReadJSONFileURL/master/hostedDataFile.json"
 
+        // this is not currently being used
         self.loadJson(fromURLString: urlString) { (result) in
             switch result {
             case .success(let data):
@@ -38,6 +39,7 @@ class JsonTrailViewController: UIViewController {
         }   //  end_loadJson
  
     }  //  end_viewDidLoad
+    
     
     
     private func readLocalFile(forName name: String) -> Data? {
@@ -52,13 +54,12 @@ class JsonTrailViewController: UIViewController {
         return nil
     }  //  end_readLocal
     
-   
 
     
     private func parse(jsonData: Data) {
         do {
             let decodedData = try JSONDecoder().decode(DemoData.self,from: jsonData)
-            
+        //  print("trailId: ",decodeData.trailId)
             print("title: ", decodedData.trailName)
             print("description: ", decodedData.description)
             print("length: ",decodedData.lengthMeters)
