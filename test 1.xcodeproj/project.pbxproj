@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AECBAE5325E316A0003F2083 /* TrailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECBAE5225E316A0003F2083 /* TrailsTableViewCell.swift */; };
 		C285857925C38C8D002A720C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285857825C38C8D002A720C /* AppDelegate.swift */; };
 		C285857B25C38C8D002A720C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285857A25C38C8D002A720C /* SceneDelegate.swift */; };
 		C285857D25C38C8D002A720C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285857C25C38C8D002A720C /* ViewController.swift */; };
-		C285858025C38C8D002A720C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C285857E25C38C8D002A720C /* Main.storyboard */; };
+		C285858025C38C8D002A720C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C285857E25C38C8D002A720C /* Main.storyboard */; settings = {ASSET_TAGS = ("TrailList=sfb", ); }; };
 		C285858225C38C92002A720C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C285858125C38C92002A720C /* Assets.xcassets */; };
 		C285858525C38C92002A720C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C285858325C38C92002A720C /* LaunchScreen.storyboard */; };
 		C285859025C38C93002A720C /* test_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285858F25C38C93002A720C /* test_1Tests.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AECBAE5225E316A0003F2083 /* TrailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailsTableViewCell.swift; sourceTree = "<group>"; };
 		C285857525C38C8C002A720C /* test 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C285857825C38C8D002A720C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C285857A25C38C8D002A720C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				C3460C6525D6A50E00576186 /* TrailData.json */,
 				C3460C8E25D8113500576186 /* TrailData.swift */,
 				C3460C9325D8122400576186 /* DataLoader.swift */,
+				AECBAE5225E316A0003F2083 /* TrailsTableViewCell.swift */,
 			);
 			path = "test 1";
 			sourceTree = "<group>";
@@ -202,6 +205,9 @@
 		C285856D25C38C8C002A720C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					"TrailList=sfb",
+				);
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
@@ -272,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3460C8F25D8113500576186 /* TrailData.swift in Sources */,
+				AECBAE5325E316A0003F2083 /* TrailsTableViewCell.swift in Sources */,
 				C285857D25C38C8D002A720C /* ViewController.swift in Sources */,
 				C3460C9425D8122400576186 /* DataLoader.swift in Sources */,
 				C285857925C38C8D002A720C /* AppDelegate.swift in Sources */,

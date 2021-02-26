@@ -196,7 +196,7 @@
             </objects>
             <point key="canvasLocation" x="-2630" y="2853"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="bEW-uh-kpd">
             <objects>
                 <viewController storyboardIdentifier="TrailListView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pHY-gc-squ" sceneMemberID="viewController">
@@ -205,7 +205,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cxO-SD-TBU">
-                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="705"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="75" id="i9l-Iu-RqQ">
@@ -247,6 +247,7 @@
                             <constraint firstItem="cxO-SD-TBU" firstAttribute="leading" secondItem="mVp-pP-XSk" secondAttribute="leading" id="S77-Vc-sUe"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="hYv-Wj-CVy" userLabel="TrailList-JSN" colorLabel="IBBuiltInLabel-Blue"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xA8-ef-fTU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2445,7 +2446,7 @@
                                 </constraints>
                             </mapView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="qqJ-gY-Iyu">
-                                <rect key="frame" x="17" y="834" width="380" height="28"/>
+                                <rect key="frame" x="17" y="883" width="380" height="28"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                             </pageControl>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4xp-0a-rWq">
@@ -2487,7 +2488,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gAu-vE-hbc">
-                                <rect key="frame" x="20" y="413" width="374" height="194"/>
+                                <rect key="frame" x="20" y="462" width="374" height="194"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="194" id="2Y9-b1-ib2"/>
                                 </constraints>
@@ -2623,15 +2624,16 @@
                         <segue destination="FJk-mW-qbF" kind="relationship" relationship="viewControllers" id="qde-6Y-dzZ"/>
                         <segue destination="OvI-DI-m8O" kind="relationship" relationship="viewControllers" id="biH-e3-NWD"/>
                         <segue destination="gxp-x2-kFr" kind="relationship" relationship="viewControllers" id="1e6-Wx-aKV"/>
+                        <segue destination="pHY-gc-squ" kind="relationship" relationship="viewControllers" id="oUX-F0-tTB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iwk-fw-z7u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1117" y="542"/>
+            <point key="canvasLocation" x="-1129" y="627"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="EJp-3B-7o1"/>
+        <segue reference="B6P-Hf-86M"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chart.bar.xaxis" catalog="system" width="128" height="98"/>
