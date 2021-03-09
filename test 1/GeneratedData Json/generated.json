@@ -1,0 +1,38 @@
+[
+  {
+    "trailName": "Belton Copp Preserve",
+    "description": "This preserve offers expansive marshland views.",
+    "lengthMeters": 1,
+    "difficulty": "Easy: brief",
+    "addressName": "14 Smith Neck Road",
+    "acreage": "4 acres",
+    "parking": "Limited parking at the trail. More parking at the state boat launch ramp."
+  },
+  {
+    "trailName": "Boggy Hole Preserve",
+    "description": "Boggy Hole description",
+    "lengthMeters": 1,
+    "difficulty": "Easy",
+    "addressName": "17 Boggy Hole Road",
+    "acreage": "44 acres",
+    "parking": "Limited parking along the road. More parking at Champlain North property."
+  },
+  {
+    "trailName": "Goberis Chadwick Preserve",
+    "description": "Goberis Chadwick description",
+    "lengthMeters": 1,
+    "difficulty": "Medium: steep",
+    "addressName": "372 Shore Road",
+    "acreage": "26 acres",
+    "parking": "Parking available on the left."
+  },
+  {
+    "trailName": "Lay Preserve",
+    "description": "Lay description",
+    "lengthMeters": 1,
+    "difficulty": "Medium: steep",
+    "addressName": "372 Shore Road",
+    "acreage": "26 acres",
+    "parking": "Parking available on the left."
+  }
+]

@@ -13,6 +13,10 @@ class mapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let data = DataLoader().generatedData
+        
+        print(data)
     }
 
 
