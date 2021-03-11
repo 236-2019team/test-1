@@ -82,8 +82,8 @@ class SignUpViewController: UIViewController {
               
                 // check for errors
                 if err != nil {
-                    
                     // there was an error creating the user
+                    print (err?.localizedDescription)
                     self.showError("Error creating user.")
                 }
                 else {
@@ -100,6 +100,10 @@ class SignUpViewController: UIViewController {
                         }
                     }
                     
+                    let defaults = UserDefaults.standard
+                    defaults.set(email, forKey: "email")
+                    defaults.set(password, forKey: "password")
+
                     // transition to the home screen
                     self.transitionToHome()
                 }
