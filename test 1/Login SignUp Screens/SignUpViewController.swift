@@ -83,8 +83,9 @@ class SignUpViewController: UIViewController {
                 // check for errors
                 if err != nil {
                     // there was an error creating the user
-                    print (err?.localizedDescription)
-                    self.showError("Error creating user.")
+                    let errdesc=err!.localizedDescription
+                    print (errdesc)
+                    self.showError("Error creating user."+errdesc)
                 }
                 else {
                     
@@ -93,10 +94,12 @@ class SignUpViewController: UIViewController {
                     
                     db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "uid": result!.user.uid]) { (error) in
                     
+                        print(type(of: error))
                         
                         if error != nil {
                             // Show error message.
-                            self.showError("Error saving user data.")
+                            let errmsg=error!.localizedDescription
+                            self.showError("Error saving user data."+errmsg)
                         }
                     }
                     
