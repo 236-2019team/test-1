@@ -11,6 +11,9 @@
 		AF014A7425F1AD74008979AC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF014A7325F1AD74008979AC /* User.swift */; };
 		AF014A7925F3D305008979AC /* MyTrailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF014A7825F3D305008979AC /* MyTrailsViewController.swift */; };
 		AF014A7E25F5B563008979AC /* OverviewMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF014A7D25F5B563008979AC /* OverviewMapViewController.swift */; };
+		AF014A8D25FAD70F008979AC /* TrailsClassForAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF014A8C25FAD70F008979AC /* TrailsClassForAnnotations.swift */; };
+		AF014A9525FADF2E008979AC /* trailAnnotations.json in Resources */ = {isa = PBXBuildFile; fileRef = AF014A9425FADF2E008979AC /* trailAnnotations.json */; };
+		AF014A9A25FAEE6C008979AC /* TrailCustomAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF014A9925FAEE6C008979AC /* TrailCustomAnnotations.swift */; };
 		AF13663625DF4545006A7466 /* TrailMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13663525DF4545006A7466 /* TrailMapView.swift */; };
 		AF32486C25D86BAA00583BD2 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF32486B25D86BA900583BD2 /* DataLoader.swift */; };
 		AF32487625D8A57600583BD2 /* TrailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF32487525D8A57600583BD2 /* TrailsTableViewController.swift */; };
@@ -76,6 +79,9 @@
 		AF014A7325F1AD74008979AC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AF014A7825F3D305008979AC /* MyTrailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTrailsViewController.swift; sourceTree = "<group>"; };
 		AF014A7D25F5B563008979AC /* OverviewMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewMapViewController.swift; sourceTree = "<group>"; };
+		AF014A8C25FAD70F008979AC /* TrailsClassForAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailsClassForAnnotations.swift; sourceTree = "<group>"; };
+		AF014A9425FADF2E008979AC /* trailAnnotations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = trailAnnotations.json; sourceTree = "<group>"; };
+		AF014A9925FAEE6C008979AC /* TrailCustomAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailCustomAnnotations.swift; sourceTree = "<group>"; };
 		AF13663525DF4545006A7466 /* TrailMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailMapView.swift; sourceTree = "<group>"; };
 		AF32486B25D86BA900583BD2 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		AF32487525D8A57600583BD2 /* TrailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailsTableViewController.swift; sourceTree = "<group>"; };
@@ -314,6 +320,9 @@
 				AF014A7325F1AD74008979AC /* User.swift */,
 				AF014A7825F3D305008979AC /* MyTrailsViewController.swift */,
 				AF014A7D25F5B563008979AC /* OverviewMapViewController.swift */,
+				AF014A8C25FAD70F008979AC /* TrailsClassForAnnotations.swift */,
+				AF014A9425FADF2E008979AC /* trailAnnotations.json */,
+				AF014A9925FAEE6C008979AC /* TrailCustomAnnotations.swift */,
 			);
 			path = "test 1";
 			sourceTree = "<group>";
@@ -446,6 +455,7 @@
 				AFA441FB25E877CA00492EB9 /* ExtraViews.storyboard in Resources */,
 				AF4AEFB125EBD39F0005F72F /* GoogleService-Info.plist in Resources */,
 				C285858025C38C8D002A720C /* Main.storyboard in Resources */,
+				AF014A9525FADF2E008979AC /* trailAnnotations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +487,8 @@
 				AF014A7E25F5B563008979AC /* OverviewMapViewController.swift in Sources */,
 				AFA4420A25E8808C00492EB9 /* ViewController.swift in Sources */,
 				AF4AEF9D25EBCD850005F72F /* HomeTabBarController.swift in Sources */,
+				AF014A9A25FAEE6C008979AC /* TrailCustomAnnotations.swift in Sources */,
+				AF014A8D25FAD70F008979AC /* TrailsClassForAnnotations.swift in Sources */,
 				AF13663625DF4545006A7466 /* TrailMapView.swift in Sources */,
 				C285857925C38C8D002A720C /* AppDelegate.swift in Sources */,
 				AF014A7425F1AD74008979AC /* User.swift in Sources */,

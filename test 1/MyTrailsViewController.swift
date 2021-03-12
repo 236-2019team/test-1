@@ -7,10 +7,8 @@
 
 import UIKit
 
-class MyTrailsViewController: UIViewController {
-
+class MyTrailsViewController: UIViewController, UITableViewDataSource {
     
-    let dataOne = DataLoader().generatedData
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,21 +16,18 @@ class MyTrailsViewController: UIViewController {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        // change return to filteredData.count
-        print("TechnoTicks!!!!", dataOne.count)
-        return dataOne.count
+ 
+        return DataLoader().generatedData.count
     }
-
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         print("test")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
-        cell.textLabel?.text = dataOne[indexPath.row].trailName
+        let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
+        myCell.textLabel?.text = DataLoader().generatedData[indexPath.row].trailName
         
         
-        return cell
+        return myCell
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -40,3 +35,4 @@ class MyTrailsViewController: UIViewController {
     }
 
 }
+

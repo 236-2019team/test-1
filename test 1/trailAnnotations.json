@@ -1,0 +1,28 @@
+
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+          "trailName": "Home"
+          "difficulty": "easy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-72.28652000427246, 41.30937327144081]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+          "trailName": "Hatchetts Hill Preserve"
+          "difficulty": "hard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-72.27030336856842, 41.31567915836573]
+      }
+    }
+  ]
+}

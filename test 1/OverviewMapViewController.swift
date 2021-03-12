@@ -17,17 +17,30 @@ class OverviewMapViewController: UIViewController, CLLocationManagerDelegate {
     let annotation = MKPointAnnotation()
     let locationManager = CLLocationManager()
     let regionInMeters: Double = 10000
+    
+    let data = DataLoader().generatedData
 
+    private var trails: [TrailsClassForAnnotations] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         checkLocationServices()
        
-        annotation.coordinate = CLLocationCoordinate2D(latitude: 41.34564, longitude: -72.28333)
-                annotation.title = "Lay Preserve"
-                annotation.subtitle = "Lords Meadow Ln"
-                overviewMap.addAnnotation(annotation)
-        locationManager.startUpdatingLocation()
+//        annotation.coordinate = CLLocationCoordinate2D(latitude: data[eachTrail].latitude, longitude: data[eachTrail].longitude)
+//                annotation.title = data[eachTrail].trailName
+//                annotation.subtitle = data[eachTrail].address
+//                overviewMap.addAnnotation(annotation)
+//        locationManager.startUpdatingLocation()
+       
+//        overviewMap.register(
+//          TrailMarkerView.self,
+//          forAnnotationViewWithReuseIdentifier:
+//            MKMapViewDefaultAnnotationViewReuseIdentifier)
+
+        loadInitialData()
+        overviewMap.addAnnotations(trails)
+
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -81,4 +94,59 @@ class OverviewMapViewController: UIViewController, CLLocationManagerDelegate {
            locationManager.desiredAccuracy = kCLLocationAccuracyBest
        }
     
+    private func loadInitialData() {
+      // 1
+      guard
+        let fileName = Bundle.main.url(forResource: "trailAnnotations", withExtension: "json"),
+        let trailData = try? Data(contentsOf: fileName)
+        else {
+          return
+      }
+
+      do {
+        // 2
+        let features = try MKGeoJSONDecoder()
+          .decode(trailData)
+          .compactMap { $0 as? MKGeoJSONFeature }
+        // 3
+        let validWorks = features.compactMap(TrailsClassForAnnotations.init)
+        // 4
+        trails.append(contentsOf: validWorks)
+      } catch {
+        // 5
+        print("Unexpected error: \(error).")
+      }
+    }
+
 }
+extension OverviewMapViewController: MKMapViewDelegate {
+  // 1
+  func mapView(
+    _ mapView: MKMapView,
+    viewFor annotation: MKAnnotation
+  ) -> MKAnnotationView? {
+    // 2
+    guard let annotation = annotation as? TrailsClassForAnnotations else {
+      return nil
+    }
+    // 3
+    let identifier = "artwork"
+    var view: MKMarkerAnnotationView
+    // 4
+    if let dequeuedView = mapView.dequeueReusableAnnotationView(
+      withIdentifier: identifier) as? MKMarkerAnnotationView {
+      dequeuedView.annotation = annotation
+      view = dequeuedView
+    } else {
+      // 5
+      view = MKMarkerAnnotationView(
+        annotation: annotation,
+        reuseIdentifier: identifier)
+      view.canShowCallout = true
+      view.calloutOffset = CGPoint(x: -5, y: 5)
+      view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+    }
+    return view
+  }
+}
+
