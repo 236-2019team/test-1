@@ -23,6 +23,20 @@ class LoginViewController: UIViewController {
         setUpElements()
 
         // Do any additional setup after loading the view.
+        let defaults = UserDefaults.standard
+
+        if (defaults.string(forKey: "email") != nil) {
+            let email=defaults.string(forKey: "email")
+            print("email:"+email!)
+            emailTextField.text=email
+         }
+        
+        if (defaults.string(forKey: "password") != nil) {
+            let password=defaults.string(forKey: "password")
+            print("password:"+password!)
+            passwordTextField.text=password
+         }
+
     }
     
     func setUpElements() {
