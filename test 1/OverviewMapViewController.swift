@@ -14,6 +14,7 @@ class OverviewMapViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var overviewMap: MKMapView!
     
+    
     let annotation = MKPointAnnotation()
     let locationManager = CLLocationManager()
     let regionInMeters: Double = 10000
@@ -26,18 +27,13 @@ class OverviewMapViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
 
         checkLocationServices()
-       
-//        annotation.coordinate = CLLocationCoordinate2D(latitude: data[eachTrail].latitude, longitude: data[eachTrail].longitude)
-//                annotation.title = data[eachTrail].trailName
-//                annotation.subtitle = data[eachTrail].address
-//                overviewMap.addAnnotation(annotation)
-//        locationManager.startUpdatingLocation()
-       
-//        overviewMap.register(
-//          TrailMarkerView.self,
-//          forAnnotationViewWithReuseIdentifier:
-//            MKMapViewDefaultAnnotationViewReuseIdentifier)
 
+        overviewMap.register(
+          TrailMarkerView.self,
+          forAnnotationViewWithReuseIdentifier:
+            MKMapViewDefaultAnnotationViewReuseIdentifier)
+
+        
         loadInitialData()
         overviewMap.addAnnotations(trails)
 

@@ -9,22 +9,22 @@ import Foundation
 import MapKit
 
 class TrailsClassForAnnotations: NSObject, MKAnnotation {
-  let trailName: String?
+  let title: String?
   let difficulty: String?
   let coordinate: CLLocationCoordinate2D
 
-//    var markerTintColor: UIColor  {
-//      switch difficulty {
-//      case "easy":
-//        return .green
-//      case "medium":
-//        return .orange
-//      case "hard":
-//        return .red
-//      default:
-//        return .blue
-//      }
-//    }
+    var markerTintColor: UIColor  {
+      switch difficulty {
+      case "easy":
+        return .green
+      case "medium":
+        return .orange
+      case "hard":
+        return .red
+      default:
+        return .blue
+      }
+    }
 
     
   init(
@@ -32,7 +32,7 @@ class TrailsClassForAnnotations: NSObject, MKAnnotation {
     difficulty: String?,
     coordinate: CLLocationCoordinate2D
   ) {
-    self.trailName = trailName
+    self.title = trailName
     self.difficulty = difficulty
     self.coordinate = coordinate
 
@@ -55,7 +55,7 @@ class TrailsClassForAnnotations: NSObject, MKAnnotation {
       }
 
       // 3
-      trailName = properties["trailName"] as? String
+      title = properties["trailName"] as? String
       difficulty = properties["difficulty"] as? String
       coordinate = point.coordinate
       super.init()

@@ -5,24 +5,210 @@
     {
       "type": "Feature",
       "properties": {
-          "trailName": "Home"
-          "difficulty": "easy"
-      },
+          "trailName": "Home",
+          "difficulty": "easy",
+          "longitude": "-72.28652000427246",
+          "latitude":"41.30937327144081"
+                    },
       "geometry": {
         "type": "Point",
         "coordinates": [-72.28652000427246, 41.30937327144081]
-      }
+                    }
     },
     {
-      "type": "Feature",
-      "properties": {
-          "trailName": "Hatchetts Hill Preserve"
-          "difficulty": "hard"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-72.27030336856842, 41.31567915836573]
-      }
-    }
+          "type": "Feature",
+          "properties": {
+              "trailName": "Belton Copp Preserve",
+              "difficulty": "easy",
+              "longitude": "-72.32295946795699",
+              "latitude":"41.29482131885766"
+                        },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-72.32295946795699, 41.29482131885766]
+                        }
+    },
+    {
+          "type": "Feature",
+          "properties": {
+              "trailName": "Boggy Hole Preserve",
+              "difficulty": "easy",
+              "longitude": "-72.31484094489234",
+              "latitude":"41.32988020397221"
+                        },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-72.31484094489234, 41.32988020397221]
+                        }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+              "trailName": "Goberis Chadwick Preserve",
+              "difficulty": "medium",
+              "longitude": "-72.26455642218795",
+              "latitude":"41.29608967303502"
+                        },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-72.26455642218795, 41.29608967303502]
+                        }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+              "trailName": "George & Woodward H. Griswold Preserve",
+              "difficulty": "easy",
+              "longitude": "-72.31757496452845",
+              "latitude":"41.334436163573315"
+                        },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-72.31757496452845, 41.334436163573315]
+                        }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+              "trailName": "Hatchetts Hill Preserve",
+              "difficulty": "easy",
+              "longitude": "-72.27212794438758",
+              "latitude":"41.315997177889"
+                        },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-72.27212794438758, 41.315997177889]
+                        }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+              "trailName": "Bob & Esther Heller Preserve",
+              "difficulty": "easy",
+              "longitude": "-72.31817025973524",
+              "latitude":"41.35741319437596"
+                        },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-72.31817025973524, 41.35741319437596]
+                        }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+              "trailName": "Hoffman-Matthiessen-DeGerenday Preserve",
+              "difficulty": "medium",
+              "longitude": "-72.31226498857151",
+              "latitude":"41.343027912195225"
+                        },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-72.31226498857151, 41.343027912195225]
+                        }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+              "trailName": "Jericho Preserve",
+              "difficulty": "medium",
+              "longitude": "-72.30061057322831",
+              "latitude":"41.33718935814206"
+                        },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-72.30061057322831, 41.33718935814206]
+                        }
+          },
+        {
+           "type": "Feature",
+           "properties": {
+               "trailName": "Lay-Allen Preserve",
+               "difficulty": "easy",
+               "longitude": "-72.28799202904872",
+               "latitude":"41.34563084303207"
+                         },
+           "geometry": {
+             "type": "Point",
+             "coordinates": [-72.28799202904872, 41.34563084303207]
+                         }
+         },
+         {
+           "type": "Feature",
+           "properties": {
+               "trailName": "Lohmann-Buck-Twining Preserve",
+               "difficulty": "hard",
+               "longitude": "-72.33424181740764",
+               "latitude":"41.336814458299834"
+                         },
+           "geometry": {
+             "type": "Point",
+             "coordinates": [-72.33424181740764, 41.336814458299834]
+                         }
+         },
+         {
+           "type": "Feature",
+           "properties": {
+               "trailName": "John Lohmann CT River Preserve",
+               "difficulty": "medium",
+               "longitude": "-72.3449150885715",
+               "latitude":"41.34700027582955"
+                         },
+           "geometry": {
+             "type": "Point",
+             "coordinates": [-72.3449150885715, 41.34700027582955]
+                         }
+         },
+         {
+           "type": "Feature",
+           "properties": {
+               "trailName": "Mile Creek Preserve",
+               "difficulty": "easy",
+               "longitude": "-72.28720760206546",
+               "latitude":"41.297770546841434"
+                         },
+           "geometry": {
+             "type": "Point",
+             "coordinates": [-72.28720760206546, 41.297770546841434]
+                         }
+         },
+         {
+           "type": "Feature",
+           "properties": {
+               "trailName": "Upper Three Mile River Preserve",
+               "difficulty": "hard",
+               "longitude": "-72.26292238857215",
+               "latitude":"41.32715202983702"
+                         },
+           "geometry": {
+             "type": "Point",
+             "coordinates": [-72.26292238857215, 41.32715202983702]
+                         }
+         },
+         {
+           "type": "Feature",
+           "properties": {
+               "trailName": "Elizabeth B. Karter Watch Rock Preserve",
+               "difficulty": "easy",
+               "longitude": "-72.32878287322941",
+               "latitude":"41.30262061874267"
+                         },
+           "geometry": {
+             "type": "Point",
+             "coordinates": [-72.32878287322941, 41.30262061874267]
+                         }
+         },
+         {
+           "type": "Feature",
+           "properties": {
+               "trailName": "name",
+               "difficulty": "hard",
+               "longitude": "-72.000",
+               "latitude":"41.000"
+                         },
+           "geometry": {
+             "type": "Point",
+             "coordinates": [-72.000, 41.000]
+                         }
+         }
   ]
 }

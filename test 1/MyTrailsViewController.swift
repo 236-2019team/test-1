@@ -6,13 +6,17 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class MyTrailsViewController: UIViewController, UITableViewDataSource {
     
+    @IBOutlet weak var trailName: UILabel!
+    @IBOutlet weak var hiked: UILabel!
+    @IBOutlet weak var info: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+   
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -22,7 +26,6 @@ class MyTrailsViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        print("test")
         let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
         myCell.textLabel?.text = DataLoader().generatedData[indexPath.row].trailName
         
