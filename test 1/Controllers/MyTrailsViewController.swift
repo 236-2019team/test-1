@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyTrailsViewController: UIViewController {
+class MyTrailsViewController: UIViewController,UITableViewDataSource{
 
     
     let dataOne = DataLoader().generatedData

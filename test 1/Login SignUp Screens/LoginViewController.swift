@@ -44,11 +44,7 @@ class LoginViewController: UIViewController {
             print("password:"+password!)
             passwordTextField.text=password
          }
-        
-        //defaults.set(email, forKey: "email")
-        //defaults.set(password, forKey: "password")
-
-        
+ 
     }
     
     func setUpElements() {

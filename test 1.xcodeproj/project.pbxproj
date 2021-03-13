@@ -50,7 +50,6 @@
 		C285858525C38C92002A720C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C285858325C38C92002A720C /* LaunchScreen.storyboard */; };
 		C285859025C38C93002A720C /* test_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285858F25C38C93002A720C /* test_1Tests.swift */; };
 		C285859B25C38C93002A720C /* test_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285859A25C38C93002A720C /* test_1UITests.swift */; };
-		E4CB640425F84BFF00FA7179 /* generated.json in Resources */ = {isa = PBXBuildFile; fileRef = E4CB640325F84BFF00FA7179 /* generated.json */; };
 		E4CB640C25F84CCA00FA7179 /* generated.json in Resources */ = {isa = PBXBuildFile; fileRef = E4CB640B25F84CCA00FA7179 /* generated.json */; };
 		E4CB641425F8561200FA7179 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4CB641325F8561100FA7179 /* GoogleService-Info.plist */; };
 		E4CB641C25F85BA400FA7179 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4CB641B25F85BA400FA7179 /* GoogleService-Info.plist */; };
@@ -127,7 +126,6 @@
 		C285859625C38C93002A720C /* test 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C285859A25C38C93002A720C /* test_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_1UITests.swift; sourceTree = "<group>"; };
 		C285859C25C38C93002A720C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4CB640325F84BFF00FA7179 /* generated.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = generated.json; path = ../../../Desktop/generated.json; sourceTree = "<group>"; };
 		E4CB640B25F84CCA00FA7179 /* generated.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = generated.json; path = ../../../../Desktop/generated.json; sourceTree = "<group>"; };
 		E4CB641325F8561100FA7179 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4CB641B25F85BA400FA7179 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -303,14 +301,10 @@
 		C285857725C38C8C002A720C /* test 1 */ = {
 			isa = PBXGroup;
 			children = (
-				E4CB640325F84BFF00FA7179 /* generated.json */,
 				E4CB641325F8561100FA7179 /* GoogleService-Info.plist */,
 				C285858625C38C92002A720C /* Info.plist */,
 				C285857825C38C8D002A720C /* AppDelegate.swift */,
-				C285857C25C38C8D002A720C /* mapViewController.swift */,
-				AF014A7825F3D305008979AC /* MyTrailsViewController.swift */,
-				AF014A6B25ED29B2008979AC /* OverviewMap.swift */,
-				AF014A7D25F5B563008979AC /* OverviewMapViewController.swift */,
+				E496858825FC6C9C000ED978 /* Controllers */,
 				C285857A25C38C8D002A720C /* SceneDelegate.swift */,
 				C285858125C38C92002A720C /* Assets.xcassets */,
 				E4A79BD525F9E491000B614B /* Data */,
@@ -340,6 +334,17 @@
 				C285859C25C38C93002A720C /* Info.plist */,
 			);
 			path = "test 1UITests";
+			sourceTree = "<group>";
+		};
+		E496858825FC6C9C000ED978 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C285857C25C38C8D002A720C /* mapViewController.swift */,
+				AF014A7825F3D305008979AC /* MyTrailsViewController.swift */,
+				AF014A6B25ED29B2008979AC /* OverviewMap.swift */,
+				AF014A7D25F5B563008979AC /* OverviewMapViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		E4A79BC425F9E305000B614B /* plists */ = {
@@ -477,7 +482,6 @@
 				AF4AEF6325E9B3E50005F72F /* gRPCCertificates-Cpp.bundle in Resources */,
 				E4CB641C25F85BA400FA7179 /* GoogleService-Info.plist in Resources */,
 				E4CB641425F8561200FA7179 /* GoogleService-Info.plist in Resources */,
-				E4CB640425F84BFF00FA7179 /* generated.json in Resources */,
 				C285858225C38C92002A720C /* Assets.xcassets in Resources */,
 				AFA441FB25E877CA00492EB9 /* ExtraViews.storyboard in Resources */,
 				E4CB640C25F84CCA00FA7179 /* generated.json in Resources */,
