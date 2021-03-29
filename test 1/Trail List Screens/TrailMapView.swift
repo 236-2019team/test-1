@@ -8,14 +8,13 @@
 import UIKit
 import MapKit
 import CoreLocation
+import FirebaseAuth
+import FirebaseDatabase
+import FirebaseFirestore
 
 class TrailMapView: UIViewController {
 
-    //old outlets -- this was the problem!
-   // @IBOutlet weak var TrailMap: MKMapView!
-   // @IBOutlet weak var TrailName: UILabel!
-    
-    //new outlets
+
     @IBOutlet weak var TrailName: UILabel!
     @IBOutlet weak var TrailMap: MKMapView!
     @IBOutlet weak var Difficulty: UILabel!
@@ -23,6 +22,8 @@ class TrailMapView: UIViewController {
     @IBOutlet weak var Acreage: UILabel!
     @IBOutlet weak var Address: UILabel!
     
+    let ref = Database.database().reference(withPath: "Hikes")
+
 
     var selectedTrail:Int = 0
     let data = DataLoader().generatedData
@@ -59,6 +60,27 @@ class TrailMapView: UIViewController {
         locationManager.startUpdatingLocation()
        
     }
+    
+    @IBAction func saveHike(_ sender: Any) {
+        
+        let formatter : DateFormatter = DateFormatter()
+          formatter.dateFormat = "d-M-yy"
+          let myStr : String = formatter.string(from:   NSDate.init(timeIntervalSinceNow: 0) as Date)
+        
+//        let trailData : [String:Any] =   [
+//            "TrailName":TrailName.text as Any, //as! NSObject,
+//            "DateHiked":"March 25"
+//                //Date().localizedDescription(dateStyle: .short, timeStyle: .short)
+//        ]
+        
+        let userID = Auth.auth().currentUser!.uid
+               
+//        ref.child(userID).child(TrailName.text!).setValue(myStr)
+        ref.child(userID).child(myStr).setValue(TrailName.text!)
+
+        
+    }
+    
     
     /*
     // MARK: - Navigation

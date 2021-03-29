@@ -7,20 +7,13 @@
 
 import UIKit
 
-class TrailsTableViewController: UITableViewController, UISearchBarDelegate {
+class TrailsTableViewController: UITableViewController {
 
     
-    @IBOutlet weak var trailSearchBar: UISearchBar!
-    
-    
-        //   var filteredData: [String]!
     let data = DataLoader().generatedData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // need to get text in table to string type rather than UserData type
-        //      filteredData =
-        //       trailSearchBar.delegate = self
     }
 
     // MARK: - Table view data source
@@ -54,28 +47,8 @@ class TrailsTableViewController: UITableViewController, UISearchBarDelegate {
         }
     }
 
-    // MARK: - Search Bar Config
-    
- /*   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
-        filteredData = []
-        
-        if searchText == "" {
-            filteredData = data
-        }
-        else {
-            for trailName in data {
-                
-                if trailName.lowerCased()contains(searchText.lowerCased()) {
-                    
-                    filteredData.append(trailName)
-                }
-            }
-        }
         
         
-        self.tableView.reloadData()
-    */
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

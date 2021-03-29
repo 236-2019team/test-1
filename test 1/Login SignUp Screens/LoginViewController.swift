@@ -21,6 +21,20 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         setUpElements()
+        
+        let defaults = UserDefaults.standard
+
+            if (defaults.string(forKey: "email") != nil) {
+                let email = defaults.string(forKey: "email")
+                print("email:"+email!)
+                emailTextField.text = email
+             }
+            
+            if (defaults.string(forKey: "password") != nil) {
+                let password = defaults.string(forKey: "password")
+                print("password:"+password!)
+                passwordTextField.text = password
+             }
 
         // Do any additional setup after loading the view.
     }
