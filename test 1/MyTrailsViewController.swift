@@ -15,7 +15,8 @@ class MyTrailsViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var trailName: UILabel!
     @IBOutlet weak var hiked: UILabel!
     @IBOutlet weak var info: UILabel!
-    var ref: DatabaseReference!
+//    var ref: DatabaseReference!
+    let dataOne = DataLoader().generatedData
     
     @IBOutlet weak var saveButton: UIButton!
     
@@ -25,6 +26,20 @@ class MyTrailsViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    let user = Auth.auth().currentUser
+
+        self.ref.child(user!.uid).getData { (error, snapshot) in
+                 if let error = error {
+                     print("Error getting data \(error)")
+                 }
+                 else if snapshot.exists() {
+                     print("Got All data \(snapshot.value!)")
+                 }
+                 else {
+                     print("No data available")
+                 }
+             }
+
 //        let user = Auth.auth().currentUser!
 //        Auth.auth().addStateDidChangeListener { auth, user in
 //          guard let user = user else { return }
@@ -33,11 +48,10 @@ class MyTrailsViewController: UIViewController, UITableViewDataSource {
         }
     func readHikes() {
     
-    ref.child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
       // Get user value
       let value = snapshot.value as? NSDictionary
       let username = value?["username"] as? String ?? ""
-      let user = User(username: username)
 
       // ...
       }) { (error) in
@@ -52,11 +66,47 @@ class MyTrailsViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
-        myCell.textLabel?.text = DataLoader().generatedData[indexPath.row].trailName
+//        let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
+//        myCell.textLabel?.text = DataLoader().generatedData[indexPath.row].trailName
+//
+//
+//        return myCell
+        print("MyTrailsViewController.cellForRowAt")
+        
+        let user=Auth.auth().currentUser
+        
+        let trailname=dataOne[indexPath.row].trailName
+        print ("\n",user!.uid," ",trailname)
+        
+//        let range = NSRange(location: 0, length: dataOne[indexPath.row].trailName.utf16.count)
+//        let regex = try! NSRegularExpression(pattern: "[a-z]at")
+//        regex.firstMatch(in: trailname, options: [], range: range) != nil
+
+        let replaced = trailname.replacingOccurrences(of: ".", with: "&")
+        
+        self.ref.child(user!.uid).child(replaced).getData { (error, snapshot) in
+            if let error = error {
+                print(replaced,":Error getting data \(error)")
+            }
+            else if snapshot.exists() {
+                print(replaced,"Got data \(snapshot.value!)")
+                
+                let value=snapshot.value as? NSDictionary
+                let dates = value?["dates"] as? String ?? ""
+                //let user = User(username: username)
+                print("dates:",dates)
+                
+            }
+            else {
+                print(replaced,"No data available")
+            }
+        }
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
+        cell.textLabel?.text = dataOne[indexPath.row].trailName + "   more info"
         
         
-        return myCell
+        return cell
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
