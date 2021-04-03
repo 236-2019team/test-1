@@ -16,19 +16,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4KD-40-g31">
-                                <rect key="frame" x="50" y="144" width="314" height="618"/>
+                                <rect key="frame" x="50" y="494" width="314" height="268"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testLogoOne" translatesAutoresizingMaskIntoConstraints="NO" id="2yE-H7-k0x">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="350"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="350" id="JF2-n7-vcf"/>
-                                        </constraints>
-                                    </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="technoTicksLogo" translatesAutoresizingMaskIntoConstraints="NO" id="CKu-e0-OtA">
-                                        <rect key="frame" x="0.0" y="370" width="314" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="148"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by: TechnoTicks, FIRST Team 236" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6Q-JZ-SaV">
-                                        <rect key="frame" x="0.0" y="518" width="314" height="100"/>
+                                        <rect key="frame" x="0.0" y="168" width="314" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="yBf-A6-fBH"/>
                                         </constraints>
@@ -42,7 +36,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="4KD-40-g31" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="GN3-0P-H7e"/>
+                            <constraint firstItem="4KD-40-g31" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="450" id="GN3-0P-H7e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4KD-40-g31" secondAttribute="bottom" constant="100" id="OCU-L8-rkp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4KD-40-g31" secondAttribute="trailing" constant="50" id="dZy-lH-Y3U"/>
                             <constraint firstItem="4KD-40-g31" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="hN5-zD-IoO"/>
@@ -56,6 +50,5 @@
     </scenes>
     <resources>
         <image name="technoTicksLogo" width="512" height="510"/>
-        <image name="testLogoOne" width="200" height="200"/>
     </resources>
 </document>
