@@ -1,38 +1,50 @@
 [
   {
     "trailName": "Belton Copp Preserve",
-    "description": "This preserve offers expansive marshland views.",
+    "description": "This preserve offers expansive marshland views. The State of CT has protected 32 acres of the adjacent wetlands. The trail is a short, very easy walk and feels a bit like a maze through high thickets. A multitude of birds of many varieties can be seen here, including osprey which nest in the adjacent tidal marsh.",
     "lengthMeters": 1,
-    "difficulty": "Easy: brief",
-    "addressName": "14 Smith Neck Road",
+    "difficulty": "Easy and brief",
+    "address": "14 Smith Neck Road",
     "acreage": "4 acres",
-    "parking": "Limited parking at the trail. More parking at the state boat launch ramp."
+    "parking": "Limited parking along the property is allowed, with plenty of additional parking at the nearby state boat launch ramp.",
+    "history": "This four-acre parcel was donated by Belton Copp, a cofounder of OLLT who was also a lawyer, World War II veteran, and conservationist. He served as trustee for The Conservation and Research Foundation which helped develop techniques for non-governmental entities to preserve land.",
+    "latitude": 41.29482131885766,
+    "longitude": -72.32295946795699
   },
   {
     "trailName": "Boggy Hole Preserve",
-    "description": "Boggy Hole description",
+    "description": "Boggy Hole features attractive and lively vernal pools, mostly flat terrain and a connection to the town-owned Champlain North Open Space for those wishing to extend their hike. One may also find historic wagon trails and plenty of stone walls. As the name Boggy Hole implies, many of the trails can be quite wet.  One should be prepared for mud and bugs and consider skipping sections after spring melt off or significant rain.",
     "lengthMeters": 1,
-    "difficulty": "Easy",
-    "addressName": "17 Boggy Hole Road",
+    "difficulty": "Easy, marshy conditions",
+    "address": "17 Boggy Hole Road",
     "acreage": "44 acres",
-    "parking": "Limited parking along the road. More parking at Champlain North property."
+    "parking": "Limited parking along the road is allowed. Additional trail access & parking through Champlain North, (an Old Lyme Open Space property): at end of  Wyckford Road or Hillwood Road West.",
+    "history": "",
+    "latitude": 41.32988020397221,
+    "longitude": -72.31484094489234
   },
   {
     "trailName": "Goberis Chadwick Preserve",
-    "description": "Goberis Chadwick description",
+    "description": "Most of the trails are moderate, with a few short steep sections. In some sections the trail runs along lovely Armstrong Brook including 2 bridge crossings. The place is alive with the sounds of peepers and bullfrogs in the spring, while other wildlife can be spotted year round.",
     "lengthMeters": 1,
-    "difficulty": "Medium: steep",
-    "addressName": "372 Shore Road",
+    "difficulty": "Moderate to steep",
+    "address": "372 Shore Road",
     "acreage": "26 acres",
-    "parking": "Parking available on the left."
+    "parking": "Parking area is on the left, opposite the house. Please respect the private house and property.",
+    "history": "In 1767 the marriage of Reuben Chadwick and Martha Miller took place in South Lyme. Tragically, their first child, a daughter born the following year, lived for only two days. Her gravestone is located in a small cemetery along with those of seven other people whose names are unknown. Reuben and Martha had at least seven other children. Reuben died in 1836 at age 95 and Martha lived about two months longer and died at age 86. They are both buried in the Duck River Cemetery. The Chadwick family was locally prominent during this early European settlement era. They were initially farmers and later mariners and ship captains. Early Chadwick homes are still standing on Four Mile River Road, Brown’s Lane and Mile Creek Road. In addition, Daniel Chadwick, who was a prominent ship captain, lived at what is now 31 Lyme Street. Theodora (Teddy) Goberis lived in a cottage at Point O Woods and taught art at Norwich Free Academy for 44 years. She generously donated this 25 acre property to the OLLT in 1998.  When Charlie Beal came on as Steward, he did some research on the cemetery and discovered the Chadwick connection.  At that time, he recommended that it be named the Goberis Chadwick Preserve.",
+    "latitude": 41.29608967303502,
+    "longitude": -72.26455642218795
   },
   {
-    "trailName": "Lay Preserve",
-    "description": "Lay description",
+    "trailName": "George & Woodward H. Griswold Preserve",
+    "description": "This preserve is situated along the scenic Mill Brook and Lower Mill Pond. It contains forested uplands with dramatic granite outcroppings, vernal pools and riparian areas. Connecticut DEEP’s Mary Steube Fish Ladder at the Lower Mill Pond dam helps alewives migrate upstream to spawn each spring. The Pond is rich in wildlife: hunting osprey are a common site, beavers reside in the pond, along with several species of duck in season. Many migratory birds can be seen throughout. At its northeastern corner, the preserve is directly across Mill Brook from our Hoffman-Matthiessen-DeGerenday Preserve.",
     "lengthMeters": 1,
-    "difficulty": "Medium: steep",
-    "addressName": "372 Shore Road",
-    "acreage": "26 acres",
-    "parking": "Parking available on the left."
+    "difficulty": "Easy — Great for all ages and abilities.",
+    "address": "30 Boston Post Road",
+    "acreage": "51 acres",
+    "parking": "Parking area for 4-6 cars is set back from Boston Post Road.",
+    "history": "This 51-acre property was bequeathed to the Trust in 1999 by Mary Steube in memory of her father and uncle, Woodward H. and George Griswold, respectively. “Woody” Griswold built the Village Shops located on Lyme Street in the center of Old Lyme. Mill Brook is the east branch of the Lieutenant River. It rises in Rogers Lake, a body of water formed by a dam first built in the late 17th century to join multiple ponds and swamps together. For three centuries Mill Brook’s water power made it the center of industrial activity in the southern part of Lyme (called \"Old Lyme\" after 1857). Grist mills and sawmills were the first structures raised, but came to include iron works, fulling mills, nail mills, and the manufacture of boats, boxes, burglar alarms, cordage, lace, lamps and lampshades, fabric, and silver-plating; along with blacksmiths, stores, and residences for workers. Only the dams at Rogers Lake, the Upper Mill Pond, and the Lower Mill Pond remain. Of the mills, only the stone-built Oliver Lay Mill (at the Upper Mill Pond) and a residence incorporating a part of the Bradbury Mill (beside the dam of the Lower Mill Pond) survive today.",
+    "latitude": 41.334436163573315,
+    "longitude": -72.31757496452845
   }
 ]
