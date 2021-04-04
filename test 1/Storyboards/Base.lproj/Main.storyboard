@@ -28,8 +28,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o7L-kW-jSC">
-                                                <rect key="frame" x="7" y="361" width="400" height="400"/>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="54" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o7L-kW-jSC">
+                                                <rect key="frame" x="7" y="115" width="400" height="646"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="400" id="0lH-fr-UJX"/>
@@ -37,10 +37,10 @@
                                                 </constraints>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" id="d2c-xP-SGK">
-                                                        <rect key="frame" x="0.0" y="28" width="400" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="28" width="400" height="100"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d2c-xP-SGK" id="n56-7r-5IP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="400" height="43.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
@@ -50,6 +50,12 @@
                                                     <outlet property="delegate" destination="ifI-6L-BS9" id="iPw-qL-wHD"/>
                                                 </connections>
                                             </tableView>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="07x-6Q-rOa">
+                                                <rect key="frame" x="44" y="87" width="340" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -82,6 +88,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" id="i9Q-5j-WD8"/>
+                    <connections>
+                        <outlet property="trailName" destination="07x-6Q-rOa" id="fpF-Yl-R4C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CiG-15-fof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -323,6 +332,14 @@
                                                     <constraint firstAttribute="height" constant="350" id="3Fx-9g-jQa"/>
                                                 </constraints>
                                             </mapView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bA-vg-XO5">
+                                                <rect key="frame" x="31" y="313" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="clickedDidHikeButton:" destination="8Re-EO-GCp" eventType="touchUpInside" id="5km-9S-tYc"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -376,6 +393,7 @@
                         <outlet property="Acreage" destination="XaG-el-t0G" id="80b-hb-71f"/>
                         <outlet property="Address" destination="IMf-qa-gHV" id="cSe-uc-oWI"/>
                         <outlet property="Description" destination="fv7-SE-ME7" id="E4U-QR-OYy"/>
+                        <outlet property="DidHikeButton" destination="3bA-vg-XO5" id="ffQ-2V-GV7"/>
                         <outlet property="Difficulty" destination="xHF-XS-Nvc" id="sDY-0s-uvh"/>
                         <outlet property="TrailMap" destination="Nfd-bs-dkh" id="g5E-Mt-7gp"/>
                         <outlet property="TrailName" destination="Knw-0z-0eB" id="0ZB-6x-AIg"/>

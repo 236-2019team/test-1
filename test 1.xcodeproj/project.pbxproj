@@ -50,7 +50,9 @@
 		C285858525C38C92002A720C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C285858325C38C92002A720C /* LaunchScreen.storyboard */; };
 		C285859025C38C93002A720C /* test_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285858F25C38C93002A720C /* test_1Tests.swift */; };
 		C285859B25C38C93002A720C /* test_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285859A25C38C93002A720C /* test_1UITests.swift */; };
-		E4CB640C25F84CCA00FA7179 /* generated.json in Resources */ = {isa = PBXBuildFile; fileRef = E4CB640B25F84CCA00FA7179 /* generated.json */; };
+		E42AB37A260EDD8200397E6E /* UserTrailRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42AB379260EDD8200397E6E /* UserTrailRating.swift */; };
+		E46C660626135E9D007BDF37 /* LogDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46C660526135E9D007BDF37 /* LogDestination.swift */; };
+		E4C3CAEE260963A7005CF6BF /* generated.json in Resources */ = {isa = PBXBuildFile; fileRef = E4C3CAED260963A7005CF6BF /* generated.json */; };
 		E4CB641425F8561200FA7179 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4CB641325F8561100FA7179 /* GoogleService-Info.plist */; };
 		E4CB641C25F85BA400FA7179 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4CB641B25F85BA400FA7179 /* GoogleService-Info.plist */; };
 		E4CB642425F9B9AE00FA7179 /* KeychainItemStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB642325F9B9AE00FA7179 /* KeychainItemStorable.swift */; };
@@ -126,7 +128,9 @@
 		C285859625C38C93002A720C /* test 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C285859A25C38C93002A720C /* test_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_1UITests.swift; sourceTree = "<group>"; };
 		C285859C25C38C93002A720C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4CB640B25F84CCA00FA7179 /* generated.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = generated.json; path = ../../../../Desktop/generated.json; sourceTree = "<group>"; };
+		E42AB379260EDD8200397E6E /* UserTrailRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTrailRating.swift; sourceTree = "<group>"; };
+		E46C660526135E9D007BDF37 /* LogDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDestination.swift; sourceTree = "<group>"; };
+		E4C3CAED260963A7005CF6BF /* generated.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = generated.json; path = "../../../../../Pre Trash/generated.json"; sourceTree = "<group>"; };
 		E4CB641325F8561100FA7179 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4CB641B25F85BA400FA7179 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4CB642325F9B9AE00FA7179 /* KeychainItemStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItemStorable.swift; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 				AF4AEF7C25E9C2590005F72F /* Constants.swift */,
 				E4CB642325F9B9AE00FA7179 /* KeychainItemStorable.swift */,
 				E4CB642825F9BA5C00FA7179 /* UserRepository.swift */,
+				E46C660526135E9D007BDF37 /* LogDestination.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -215,7 +220,7 @@
 		AF4AEF2725E9B2610005F72F /* Trail List Screens */ = {
 			isa = PBXGroup;
 			children = (
-				E4CB640B25F84CCA00FA7179 /* generated.json */,
+				E4C3CAED260963A7005CF6BF /* generated.json */,
 				AF13663525DF4545006A7466 /* TrailMapView.swift */,
 				AF32487525D8A57600583BD2 /* TrailsTableViewController.swift */,
 			);
@@ -369,6 +374,7 @@
 			isa = PBXGroup;
 			children = (
 				AF014A7325F1AD74008979AC /* User.swift */,
+				E42AB379260EDD8200397E6E /* UserTrailRating.swift */,
 				AF4AEF7225E9B9C10005F72F /* GeneratedData.swift */,
 				AF32486B25D86BA900583BD2 /* DataLoader.swift */,
 			);
@@ -483,8 +489,8 @@
 				E4CB641C25F85BA400FA7179 /* GoogleService-Info.plist in Resources */,
 				E4CB641425F8561200FA7179 /* GoogleService-Info.plist in Resources */,
 				C285858225C38C92002A720C /* Assets.xcassets in Resources */,
+				E4C3CAEE260963A7005CF6BF /* generated.json in Resources */,
 				AFA441FB25E877CA00492EB9 /* ExtraViews.storyboard in Resources */,
-				E4CB640C25F84CCA00FA7179 /* generated.json in Resources */,
 				C285858025C38C8D002A720C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +516,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E42AB37A260EDD8200397E6E /* UserTrailRating.swift in Sources */,
 				C285857D25C38C8D002A720C /* mapViewController.swift in Sources */,
 				AF32486C25D86BAA00583BD2 /* DataLoader.swift in Sources */,
 				AF4AEF7825E9BCAE0005F72F /* Utilities.swift in Sources */,
@@ -519,6 +526,7 @@
 				AF4AEF9D25EBCD850005F72F /* HomeTabBarController.swift in Sources */,
 				AF13663625DF4545006A7466 /* TrailMapView.swift in Sources */,
 				C285857925C38C8D002A720C /* AppDelegate.swift in Sources */,
+				E46C660626135E9D007BDF37 /* LogDestination.swift in Sources */,
 				AF014A7425F1AD74008979AC /* User.swift in Sources */,
 				C285857B25C38C8D002A720C /* SceneDelegate.swift in Sources */,
 				AF32487625D8A57600583BD2 /* TrailsTableViewController.swift in Sources */,

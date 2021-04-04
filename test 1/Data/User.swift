@@ -6,21 +6,21 @@
 //
 
 import Foundation
-/*
-class User: Codable {
-    
-    static func setCurrent(_ user: User, writeToUserDefaults: Bool = false) {
-        // 2
-        if writeToUserDefaults {
-            // 3
-            if let data = try? JSONEncoder().encode(user) {
-                // 4
-                UserDefaults.standard.set(data, forKey: Constants.UserDefaults.currentUser)
-            }
-        }
+import FirebaseDatabase
+import FirebaseAuth
 
-        _current = user
-    }
-    
+struct User {
+  
+  let uid: String
+  let email: String
+  
+  init(authData: FirebaseAuth.User) {
+    uid = authData.uid
+    email = authData.email!
+  }
+  
+  init(uid: String, email: String) {
+    self.uid = uid
+    self.email = email
+  }
 }
-*/
