@@ -185,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				AFA4420925E8808C00492EB9 /* ViewController.swift */,
-				AFA441FF25E87AF600492EB9 /* LoginViewController.swift */,
 				AFA4420125E87AF700492EB9 /* SignUpViewController.swift */,
 				AF4AEF9C25EBCD850005F72F /* HomeTabBarController.swift */,
 			);
@@ -346,6 +345,7 @@
 			children = (
 				C285857C25C38C8D002A720C /* mapViewController.swift */,
 				AF014A7825F3D305008979AC /* MyTrailsViewController.swift */,
+				AFA441FF25E87AF600492EB9 /* LoginViewController.swift */,
 				AF014A6B25ED29B2008979AC /* OverviewMap.swift */,
 				AF014A7D25F5B563008979AC /* OverviewMapViewController.swift */,
 			);
