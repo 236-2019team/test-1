@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
              }
 
         // Do any additional setup after loading the view.
-        let defaults = UserDefaults.standard
+        //let defaults = UserDefaults.standard
 
         if (defaults.string(forKey: "email") != nil) {
             let email=defaults.string(forKey: "email")
