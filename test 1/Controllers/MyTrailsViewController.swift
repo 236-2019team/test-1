@@ -18,7 +18,7 @@ class MyTrailsViewController: UIViewController,UITableViewDataSource {
     
     var dataDict: [String:String]=[:] //trailname +dates
     //var hikedDates: [String:Array]=[[]]
-    var hikedDates=[String: [String]]()
+    var hikedDates=[String: [String?]]()
     
     @IBOutlet weak var trailName: UITextField!
     
@@ -83,10 +83,16 @@ class MyTrailsViewController: UIViewController,UITableViewDataSource {
         
         print (hikedDates[rowKey]!)
         
-        for String in hikedDates[rowKey] {
-            print ("date:",date as? String)
-        }
+        let anArray = hikedDates[rowKey]
+        print (anArray ?? "default value")
         
+        print ("\(anArray!.count)")
+        
+        for (index,str) in anArray!.enumerated() {
+            print ("\(index+1) \(str!)")
+        }
+
+        print ("last:",anArray!.last!!)
         
         
         cell.textLabel?.text =  "\(rowKey)\n \(rowValue)"
