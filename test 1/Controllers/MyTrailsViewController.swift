@@ -4,26 +4,20 @@
 //
 //  Created by students on 3/6/21.
 //
-
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 
 class MyTrailsViewController: UIViewController,UITableViewDataSource {
 
-    let dataOne = DataLoader().generatedData
     let ref = Database.database().reference(withPath: "User-Trail-Rating")
-    var dest = LogDestination()
+    
     var isLoaded=false
     
-    var dataDict: [String:String]=[:] //trailname +dates
-    //var hikedDates: [String:Array]=[[]]
     var hikedDates=[String: [String?]]()
     
-    @IBOutlet weak var trailName: UITextField!
-    
     override func viewDidLoad() {
-        print("MyTrailsViewController.viewDidLoad:", dataOne.count)
+        print("MyTrailsViewController.viewDidLoad:")
 
         super.viewDidLoad()
         
@@ -53,11 +47,11 @@ class MyTrailsViewController: UIViewController,UITableViewDataSource {
                    numberOfRowsInSection
                     section: Int)
                 -> Int {
-        print ("numberOfRowsInSection",dataDict.keys.count)
+        print ("numberOfRowsInSection",hikedDates.keys.count)
         while (!isLoaded) {
             sleep(UInt32(0.1))
         }
-        return dataDict.keys.count
+        return hikedDates.keys.count
     }
 
     
@@ -72,21 +66,22 @@ class MyTrailsViewController: UIViewController,UITableViewDataSource {
         cell.detailTextLabel?.numberOfLines=3
         cell.textLabel?.lineBreakMode = .byWordWrapping
         
-//        print(type(of:dataDict.keys))
-//        print(dataDict.values)
+        let trailNameKey=Array(hikedDates.keys)[indexPath.row]
+        let trailArray=hikedDates[trailNameKey]!     //Array(dataDict.values)[indexPath.row]
 
-        let rowKey=Array(dataDict.keys)[indexPath.row]
-        let rowValue=dataDict[rowKey]!     //Array(dataDict.values)[indexPath.row]
-
-        print (rowKey)
-        print (rowValue)
+        print (trailNameKey)
         
-        print (hikedDates[rowKey]!)
+        //--------------------------------------
+        // Date Array
+        //--------------------------------------
+//        print (trailArray)
         
-        let anArray = hikedDates[rowKey]
-        print (anArray ?? "default value")
+        print (hikedDates[trailNameKey]!)
         
-        print ("\(anArray!.count)")
+        let anArray = hikedDates[trailNameKey]
+//        print (anArray ?? "default value")
+        
+//        print ("\(anArray!.count)")
         
         for (index,str) in anArray!.enumerated() {
             print ("\(index+1) \(str!)")
@@ -94,9 +89,72 @@ class MyTrailsViewController: UIViewController,UITableViewDataSource {
 
         print ("last:",anArray!.last!!)
         
+        //-------------------------------------
+        // Set label to rowKey
+        //-------------------------------------
+        //cell.textLabel?.text =  "\(trailNameKey)\n \(trailArray)"
+
+        let stackView = cell.contentView.subviews[0];
         
-        cell.textLabel?.text =  "\(rowKey)\n \(rowValue)"
+        print (stackView)
         
+        let topView = UIView()
+        
+        let label = UILabel(/*frame:
+                            CGRect(x: 0,
+                            y: 0,
+                            width: 200,
+                            height: 21)*/)
+        //label.center = CGPoint(x: 160, y: 285)
+        //label.textAlignment = .center
+        label.text = trailNameKey
+
+        topView.addSubview(label)
+        
+        print (topView)
+        
+        stackView.addSubview(topView);
+
+        let label2 = UILabel(/*frame:
+                            CGRect(x: 0,
+                            y: 0,
+                            width: 200,
+                            height: 21)*/)
+        //label2.center = CGPoint(x: 160, y: 285)
+        //label2.textAlignment = .center
+        label2.text = "4/15/2021 08:30"
+
+        let nextView=UIView()
+        nextView.addSubview(label2)
+        
+        stackView.addSubview(nextView)
+        
+        //let tableView = UITableView()
+        //tableView.dataSource(anArray)
+
+        
+        /*
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        
+        let subView = contentView.addSubview(stackView)
+        subView.addSubview("test");
+        
+        
+        let label = UILabel(frame: CGRect(x: 0,
+                            y: 0,
+                            width: 200,
+                            height: 21))
+        label.center = CGPoint(x: 160, y: 285)
+        label.textAlignment = .center
+        label.text = "I'm a test label"
+
+        trailView.addSubview(label)
+        
+        //trailLabel.text=trailNameKey
+        //datesTable.append("test")
+        //data.append("Test")
+        */
         
         return cell
     }
@@ -127,22 +185,22 @@ class MyTrailsViewController: UIViewController,UITableViewDataSource {
                     
                     var datesArray: [String]=[]
                     
-                    var strs=""
+                    //var strs=""
                     for str in dateArray {
                         print(str) // Optional<Any>
                         print ("type(of:dict[str]:",type(of:dict[str]))
                         
-                        strs=strs+"\n "+"\(str)"
+                    //    strs=strs+"\n "+"\(str)"
                         //if let str = str {
                         datesArray.append(str as? String ?? "default value")
                         //}
                     }
-                    self.dataDict[key as! String]="\(strs)"
+                    //self.dataDict[key as! String]="\(strs)"
 
                     hikedDates[key as! String]=datesArray
 
                 }
-                //                        print ("--------------------")
+//                        print ("--------------------")
             }
         }
         self.isLoaded=true
